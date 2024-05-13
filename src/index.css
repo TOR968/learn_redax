@@ -4,41 +4,111 @@
   margin: 0;
 }
 
-/* Container styles */
-.container {
-  max-width: 1200px;
+body {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("https://codefinity-content-media.s3.eu-west-1.amazonaws.com/code-1/react-pro/redux/lake-1915846_1920.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  padding-left: 30px;
+  padding-right: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+form {
+  padding: 20px;
+  width: 300px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #323232;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+input,
+select {
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+  border: 2px solid #9bbaee;
+  padding: 10px;
+}
+
+select {
+  color: #9bbaee;
+}
+
+button {
+  background-color: #ff8a00;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+  display: block;
+  margin: 10px auto 0;
+  transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+button:hover {
+  background-color: #1e2635;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-between;
+  padding: 10px;
   background-color: #f4f4f4;
-  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  margin: 10px;
 }
 
-/* Heading styles */
-h2 {
-  color: #d97800;
-  margin-bottom: 10px;
+li button {
+  margin-top: 0;
 }
 
-/* Button styles */
-button {
-  background-color: #4f5e77;
-  color: #fff;
-  border: none;
-  padding: 14px 20px;
-  margin: 5px;
-  cursor: pointer;
-  font-family: Arial, sans-serif;
+h2,
+p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #9bbaee;
+  margin-right: 30px;
+}
+
+span {
   font-size: 16px;
   font-weight: 500;
-  text-transform: uppercase;
-  border-radius: 10px;
-  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-/* Button hover styles */
-button:hover {
-  background-color: #9bbaee;
+  color: #4f5e77;
 }

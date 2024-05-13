@@ -1,14 +1,13 @@
 import React from "react";
-import Counter from "../Counter/Counter";
+import Form from "../Form/Form";
+import ShipList from "../ShipList/ShipList";
 import "../index.css";
-
-// App component is the main entry point of your application.
 
 const App = () => {
   return (
-    // The App component renders a container div that holds the Counter component.
     <div className="container">
-      <Counter />
+      <Form />
+      <ShipList />
     </div>
   );
 };
